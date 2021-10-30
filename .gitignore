@@ -40,5 +40,7 @@ yarn-error.log*
 next.config.js
 
 #
-/.vscode/
+.vscode
+
+#
 .vercel
