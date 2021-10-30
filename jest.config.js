@@ -1,10 +1,10 @@
 module.exports = {
-  testPathIgnorePatterns: ["/node_modules/", "/.next/"],
+  testPathIgnorePatterns: ["/node_modules/", "/.next/"], // ignorar essas pastas ao rodar testes
   setupFilesAfterEnv: [
     "<rootDir>/src/tests/setupTests.ts"
-  ],
+  ], // indicar arquivo de setup
   transform: {
-    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest" // transformar os arquivos com extensão ".js, .jsx, .ts, .tsx" para formato jest
   },
   testEnvironment: 'jsdom',
   moduleNameMapper: {
